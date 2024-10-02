@@ -1,1 +1,72 @@
-# Timer
+
+# Timer Application
+
+This is a simple Timer Application built using Python and `customtkinter` with hotkey bindings. The application allows users to create multiple timers that can be reset using specific key bindings.
+
+## Features
+
+- **Multiple Timers**: Each timer is associated with a different key.
+- **Custom Key Bindings**: Supports single keys and combinations (e.g., `ctrl+right`).
+- **Real-Time Countdown**: Timers are displayed and updated in real-time.
+- **Adjustable UI**: Users can modify window size and timer labels easily.
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Nyno3333/Timer.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd Timer
+   ```
+
+3. Install the required packages:
+
+   ```bash
+   pip install customtkinter
+   pip install keyboard
+   pip install pillow
+
+   ```
+
+4. Run the application:
+
+   ```bash
+   python Timer.py
+   ```
+
+## Before  Using
+
+### Example Modifications
+If you want to add a new timer named **"Example Name"** with a duration of 15 seconds and bound to the **"r"** key combination, go to **Line 108**  your timer settings should look like this:
+
+```python
+timer_settings = {
+    ...
+    "Example Name": {"duration": 15, "key": "r"},  # New timer added   
+    "Example Name": {"duration": 15, "key": "r", "image": "xxx.png"},  # New timer with image added
+}
+```
+
+- To add a new timer, copy an existing line and paste it below. Make sure to update the **name**, **duration**, and **key binding** as needed.
+- Don't forget to add a comma `,` at the end of each line to avoid syntax errors.
+- Use **"Freed Shadow"**, **"AOSM"**, **"Night Parade"**, **"GROTTO"** instead of **"Example Name"** to have the correct title image ratio
+
+
+
+### Modifying the Window Size & Title
+To change the size of the application window, go to **Line 111** in the script:
+
+```python
+   app.geometry("340x130")  # Adjusted size for better UI layout
+   app.attributes('-topmost', True)  # Always on top
+   app.attributes('-alpha', 0.8)  # Slight transparency
+```
+- The **first value** is the width of the window, and the **second value** is the height
+- Optionally, you can change the **title of the window** just above
+- And the lasts ones are the background **opacity and color**  
+
