@@ -70,3 +70,12 @@ To change the size of the application window, go to **Line 111** in the script:
 - Optionally, you can change the **title of the window** just above
 - And the lasts ones are the background **opacity and color**  
 
+### Pause/Resume and Reset Timers
+Default binds are F2 to pause/resume and F3 to reset timers:
+```python
+   if key == 'f2':  # Change 'F2' to what you want for pause/resume (Line 68)
+   ```
+```python
+   elif key == 'f3':  # Change 'F2' to what you want to reset timers (Line 80)
+```
+
