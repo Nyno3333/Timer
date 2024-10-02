@@ -107,11 +107,11 @@ def main():
 
     # Create the main application window
     app = ctk.CTk()
+    app.resizable(True, True)
     app.title("Timer")
     app.geometry("300x100")  # Adjusted size for better UI layout
     app.attributes('-topmost', True)  # Always on top
     app.attributes('-alpha', 0.8)  # Slight transparency
-    app.resizable(False, False)
     app.configure(fg_color="#000000")   
 
     # Configure customtkinter appearance
