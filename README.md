@@ -39,7 +39,7 @@ The application allows users to create multiple timers that can be reset using s
 ## Before  Using
 
 ### Example Modifications
-If you want to add a new timer named **"Example Name"** with a duration of 15 seconds and bound to the **"r"** key combination, go to **Line 108**  your timer settings should look like this:
+If you want to add a new timer named **"Example Name"** with a duration of 15 seconds and bound to the **"r"** key combination, go to **Line 105**  your timer settings should look like this:
 
 ```python
 timer_settings = {
