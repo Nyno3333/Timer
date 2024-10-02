@@ -1,7 +1,9 @@
 
 # Timer Application
 
-This is a simple Timer Application built using Python and `customtkinter` with hotkey bindings. The application allows users to create multiple timers that can be reset using specific key bindings.
+This is a simple Timer Application built using Python and `customtkinter` with hotkey bindings. 
+The application allows users to create multiple timers that can be reset using specific key bindings. 
+**Need to run as admin** to works while using Elsword somehow.
 
 ## Features
 
@@ -12,19 +14,13 @@ This is a simple Timer Application built using Python and `customtkinter` with h
 
 ## Installation
 
-1. Clone the repository:
+1. Clone the repository then go in the folder (or just download Timer.py): 
 
    ```bash
    git clone https://github.com/Nyno3333/Timer.git
    ```
 
-2. Navigate to the project directory:
-
-   ```bash
-   cd Timer
-   ```
-
-3. Install the required packages:
+2. Install the required packages (cmd):
 
    ```bash
    pip install customtkinter
@@ -33,7 +29,7 @@ This is a simple Timer Application built using Python and `customtkinter` with h
 
    ```
 
-4. Run the application:
+3. Run the application (cmd):
 
    ```bash
    python Timer.py
@@ -54,7 +50,7 @@ timer_settings = {
 
 - To add a new timer, copy an existing line and paste it below. Make sure to update the **name**, **duration**, and **key binding** as needed.
 - Don't forget to add a comma `,` at the end of each line to avoid syntax errors.
-- Use **"Freed Shadow"**, **"AOSM"**, **"Night Parade"**, **"GROTTO"** instead of **"Example Name"** to have the correct title image ratio
+- Use **"Freed Shadow"**, **"AOSM"**, **"Night Parade"**, **"GROTTO"** instead of **"Example Name"** to have the correct title image ratio.
 
 
 
@@ -66,9 +62,9 @@ To change the size of the application window, go to **Line 111** in the script:
    app.attributes('-topmost', True)  # Always on top
    app.attributes('-alpha', 0.8)  # Slight transparency
 ```
-- The **first value** is the width of the window, and the **second value** is the height
-- Optionally, you can change the **title of the window** just above
-- And the lasts ones are the background **opacity and color**  
+- The **first value** is the width of the window, and the **second value** is the height.
+- Optionally, you can change the **title of the window** just above.
+- And the lasts ones are the background **opacity and color**.
 
 ### Pause/Resume and Reset Timers
 Default binds are F2 to pause/resume and F3 to reset timers:
@@ -78,4 +74,3 @@ Default binds are F2 to pause/resume and F3 to reset timers:
 ```python
    elif key == 'f3':  # Change 'F2' to what you want to reset timers (Line 80)
 ```
-
