@@ -18,6 +18,7 @@ The application allows users to create multiple timers that can be reset using s
 
    ```bash
    git clone https://github.com/Nyno3333/Timer.git
+   cd Timer
    ```
 
 2. Install the required packages (cmd):
