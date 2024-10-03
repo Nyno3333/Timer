@@ -36,7 +36,7 @@ class Timer:
 
     # Reset the timer to its initial state
     def reset(self):
-        if self.name != "Freed Shadow" or "AOSM" or "Night Parade" or "GROTTO" or self.remaining_time <= 0:
+        if self.name not in ["Freed Shadow", "AOSM", "Night Parade", "GROTTO"] or self.remaining_time <= 0:
             if self.timer_id:
                 self.label.after_cancel(self.timer_id)
             self.remaining_time = self.duration
