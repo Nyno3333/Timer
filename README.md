@@ -43,7 +43,6 @@ If you want to add a new timer named **"Example Name"** with a duration of 15 se
 
 ```python
 timer_settings = {
-    ...
     "Example Name": {"duration": 15, "key": "r"},  # New timer    
     "Example Name": {"duration": 15, "key": "r", "image": "xxx.png"},  # New timer with image
     "Example Name": {"duration": 15, "key": "r", "loop": True},  # New timer with loop
