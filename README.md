@@ -39,7 +39,7 @@ The application allows users to create multiple timers that can be reset using s
 ## Before  Using
 
 ### Example Modifications
-If you want to add a new timer named **"Example Name"** with a duration of 15 seconds and bound to the **"r"** key combination, go to **Line 105**  your timer settings should look like this:
+If you want to add a new timer named **"Example Name"** with a duration of 15 seconds and bound to the **"r"** key combination, go to **Line 109**  your timer settings should look like this:
 
 ```python
 timer_settings = {
@@ -52,11 +52,12 @@ timer_settings = {
 - To add a new timer, copy an existing line and paste it below. Make sure to update the **name**, **duration**, and **key binding** as needed.
 - Don't forget to add a comma `,` at the end of each line to avoid syntax errors.
 - Use **"Freed Shadow"**, **"AOSM"**, **"Night Parade"**, **"GROTTO"** instead of **"Example Name"** to have the correct title image ratio.
+- If **"Example Name"** is remplaced with **"Freed Shadow"**, **"AOSM"**, **"Night Parade"**, **"GROTTO"**, **"PT1"**, **"PT2"**, **"PT3"** or **"PT4"** the timer will not be reactivated if it is already in use
 
 
 
 ### Modifying the Window Size & Title
-To change the size of the application window, go to **Line 111** in the script:
+To change the size of the application window, go to **Line 120** in the script:
 
 ```python
    app.geometry("340x130")  # Adjusted size for better UI layout
@@ -70,8 +71,8 @@ To change the size of the application window, go to **Line 111** in the script:
 ### Pause/Resume and Reset Timers
 Default binds are F2 to pause/resume and F3 to reset timers:
 ```python
-   if key == 'f2':  # Change 'F2' to what you want for pause/resume (Line 68)
+   if key == 'f2':  # Change 'F2' to what you want for pause/resume (Line 73)
    ```
 ```python
-   elif key == 'f3':  # Change 'F2' to what you want to reset timers (Line 80)
+   elif key == 'f3':  # Change 'F2' to what you want to reset timers (Line 85)
 ```
